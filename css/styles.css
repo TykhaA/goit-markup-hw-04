@@ -10,7 +10,7 @@
     --color-text: #434455;
     --corp-color: #4d5ae5;
     --corp-color-hover: #404bbf;
-    --success-color: #31D0AA;
+    --success-color: #31d0aa;
 }
 
 /* Reset */
@@ -194,7 +194,7 @@ ol {
 }
 
 .header-list-item:after {
-    content: '';
+    content: "";
     position: absolute;
     background-color: transparent;
     border-radius: 2px;
@@ -212,7 +212,6 @@ ol {
 
 .header-list-item_active:after {
     background-color: var(--corp-color-hover);
-
 }
 
 .header-list-item:hover,
@@ -282,13 +281,14 @@ ol {
 
 /* section main-banner  */
 .main-banner {
-    background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url('./../images/people-office.jpg');
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("./../images/people-office.jpg");
     background-repeat: no-repeat;
     padding: 188px 0 188px;
     background-size: cover;
     background-position: center;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .main-banner-title {
@@ -343,13 +343,14 @@ ol {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(46, 47, 66, 0.40);
+    background: rgba(46, 47, 66, 0.4);
 }
 
 .modal {
     border-radius: 4px;
-    background-color: #FCFCFC;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    background-color: #fcfcfc;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -387,15 +388,20 @@ ol {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -ms-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn svg {
-    fill: #2E2F42;
+    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -425,7 +431,7 @@ ol {
 }
 
 .studio-list-item {
-    width: calc((100% - 24px * 3)/4);
+    width: calc((100% - 24px * 3) / 4);
 }
 
 .studio-list-item .section-sub-title {
@@ -487,7 +493,7 @@ ol {
 
 .contacts-list-info {
     padding: 32px 0;
-    background: var(--white, #FFF);
+    background: var(--white, #fff);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -532,7 +538,7 @@ ol {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 8px;
+    margin-top: 8px;
 }
 
 /* section customers */
@@ -550,29 +556,34 @@ ol {
 }
 
 .customers-item {
-    width: calc((100% - 24px * 5)/6);
+    width: calc((100% - 24px * 5) / 6);
 }
 
 .customers-link {
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    border: 1px solid #8E8F99;
+    border: 1px solid #8e8f99;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 0;
-    color: #8E8F99;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -ms-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #8e8f99;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link svg {
     fill: currentColor;
-    transition: border 250ms ease,
+    transition: border 250ms ease;
 }
 
 .customers-link:focus,
@@ -607,11 +618,26 @@ ol {
     border-radius: 4px;
     padding: 12px 24px;
     border: 1px solid var(--third-ligth-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -ms-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -619,12 +645,10 @@ ol {
     background: var(--corp-color-hover);
     color: var(--primary-light-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-        0px 2px 1px 0px rgba(0, 0, 0, 0.08),
-        0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
     border: 1px solid transparent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-        0px 2px 1px 0px rgba(0, 0, 0, 0.08),
-        0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-page-list {
@@ -649,7 +673,7 @@ ol {
 
 .portfolio-page-item-info {
     padding: 32px 16px;
-    background: var(--white, #FFF);
+    background: var(--white, #fff);
     border: 1px solid var(--third-ligth-color);
     border-top: none;
 }
